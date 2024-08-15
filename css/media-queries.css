@@ -74,4 +74,94 @@
         padding: 16px;
         line-height: 19px;
     }
+    div.container4 img{
+        width: -webkit-fill-available;
+    }
+    div.map iframe{
+        width:440px; 
+        height:388px;
+    }
 }
+@media screen and (max-width:390px) {
+    
+    section{
+
+        margin-bottom: -202px;
+        width: 100%;
+        height:fit-content;
+        padding-bottom: 35px;
+    }
+    div.product-section1{
+        columns:1;
+
+    }
+    div.container7{
+        columns: 1;
+    }
+    div.container10{
+        flex-direction: column;
+        margin-top: 510px;
+        text-align: -webkit-center;
+        gap: 20px;
+
+    }
+   img#img1{
+    margin-left: 0px;
+   }
+   img#img2{
+    margin-left: 0px;
+   }
+   img#img3{
+    margin-left: 0px;
+   }
+    div.product-section1 img{
+        width:370px
+    }
+    div.game-section{
+        
+    margin-top: 210px;
+    margin-right: 149px;
+    }
+    div.video-text p{
+        padding-left: 17px;
+        padding-right: 0px;
+    }
+    button.btn4{
+        margin-left: 20px;
+    }
+    div.map iframe{
+        width:305px; 
+        height:388px;
+    }
+    div.container5 {
+       
+    columns: 2;
+    column-gap: 196px;
+    }
+    div.container6{
+        padding: 56px;
+    }
+    input#btn3{
+    padding-right: 12px;
+    padding-left: 12px;
+    }
+    input{
+    padding-right: 75px;
+    padding-left: 75px;
+
+    }
+    textarea{
+    width:100%
+    }
+    /* div.card{
+    width: 111px;
+    height: 217px;
+    } */
+    div.container9{
+        flex-direction: column;
+        align-items: baseline;
+        margin-top: 441px;
+    }
+    
+}
+
