@@ -7,12 +7,41 @@
 }
 section{
     min-height: 100vh;
-    background-image:linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url("../image/image.webp");
+    /* background-image:linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url("../image/image.webp"); */
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
    
 }
+section
+ {
+   
+	background-image:linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url("../image/image.webp");
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	animation: changeImage 20s linear infinite;
+
+ }
+ @keyframes changeImage{
+	0%{
+		background-image: url("../image/image.webp");
+	}
+	25%{
+		background-image: url("../image/console-image.webp");
+	}
+	50%{
+		background-image: url("../image/image1.webp");
+	}
+	75%{
+		background-image: url("../image/image2.webp");
+	}
+	100%{
+		background-image: url("../image/image3.webp");
+	}
+ 
+ }
+
 .container
 {
     width: 85%;
@@ -60,7 +89,7 @@ nav ul li .active{
 }
 .article{
     width: 50%;
-    margin-top: 30px;
+    margin-top: 85px;
     transform: translateY(25);
 }
 .article h1{
@@ -68,6 +97,10 @@ nav ul li .active{
     color:#fff;
     letter-spacing: 1.5px;
     font-weight: 800;
+    margin-top: 30px;
+}
+.article h3{
+    color:#fff;
 }
 .article p{
     font-size: 18px;
@@ -83,12 +116,103 @@ nav ul li .active{
     text-decoration: none;
     background-color: #f15048;
 }
+video{
+    object-fit: cover;
+   
+    
+}
+#ps5img{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: -1200px;
+}
+div.video-text p{
+    position: absolute;
+    margin-top: -320px;
+    color: #fff;
+    padding-left: 151px;
+    padding-right: 730px;
+    padding-top: 50px;
+    line-height: 20px;
+}
+button.btn4{
+    position: absolute;
+    margin-top: -151px;
+    margin-left: 151px;
+    background-color: transparent;
+    color: #fff;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 16px;
+    font-weight: 900;
+    border: solid;
+    border-radius: 31px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+}
+button.btn4:hover {
+    transform: scale(1.1);
+    background-color: #45a049;
+}
+
+button.btn4:active {
+    transform: scale(0.9);
+    background-color: #3e8e41;
+}
 .about-heading{
    
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 20px;
 
+
+}
+div.container6{
+
+    padding-left: 200px;
+    padding-right: 241px;
+    line-height: 33px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url("../image/about-back.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.container6 h1{
+
+   font-size: 45px;
+   color: #fff;
+    
+}
+div.container7{
+
+    padding-left: 33px;
+    padding-right: 33px;
+    line-height: 24px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    columns: 2;
+}
+div.container6 h4{
+
+    margin-top: 20px;
+    font-size: 22px;
+    color: #fff;
+    
+}
+div.container6 p{
+
+    color: #fff;
+    font-size: 18px;
+    
+}
+div.product-heading center h1{
+    
+    color: teal;
 }
 div.container3 img{
     width: 33pc;
@@ -137,8 +261,27 @@ div.product-heading{
 div.product-section{
     columns: 2;
     column-gap: 30px;
-    background-color: #a7a7a7;
+    
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+   
 }
+div.product-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../image/backg.webp");
+    opacity: 0.9; /* Adjust the opacity here */
+    z-index: -1;
+}
+    
 div.container2{
    padding: 20px;
    line-height: 25px; 
@@ -150,9 +293,140 @@ div.container1 h1{
 }
 div.container2 p
 {
-    color:#524f4f;
+    color:#ffffff;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+div.container2 a.btn{
+    background-color: peru;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 27px;
+}
+div.product-section1{
+    columns: 2;
+    column-gap: 30px;
+}
+div.text-container4{
+    padding-top: 160px;
+    padding-left: 20px;
+    font-family: sans-serif;
+    
+}
+div.text-container4 h2{
+
+    padding-top: 12px;
+    line-height: 32px;
+    color: #4399fa;
+}
+div.text-container4 p{
+    font-size: small;
+}
+button.btn2{
+
+    margin-top: 15px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: large;
+    font-weight: 500;
+    background-color: #0070CC;
+    color: #fff;
+    border-radius: 30px
+
+
+}
+button.btn6{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: black;
+    font-size: 23px;
+    font-weight: 900;
+    color: #FFF;
+    margin-top: -16px;
+
+}
+button.btn6:hover{
+    background-color: #0070CC;
+}
+div.container10{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    
+}
+div.container10 h4
+{
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+div.container10 p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+div.container12 h4{
+    color: #0070CC;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+div.container12 p{
+    line-height: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.game-section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    text-align: center;
+    letter-spacing: 12px;
+    
 }
 
+   
+.game-section img{
+
+    
+    width: 100px;
+    height: 70px;
+    border-radius: 20px;
+
+}
+.game-section img:hover{
+    border: groove;
+    animation: both;
+    border-color: #0070CC;
+}
+.container8{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+input{
+    padding-left: 277px;
+    padding-right: 277px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-width: 5px;
+}
+input:hover{
+    border-color: #0070CC;
+}
+input#btn3{
+    padding-left: 330px;
+    padding-right: 330px;
+    background-color: #0070CC;
+    color: #fff;
+    font-size: large;
+    font-weight: 500;
+    border-width: 0px;
+}
+input#btn3:hover{
+    opacity: 0.8;
+}
 .footer-container{
     columns: 4;
     
